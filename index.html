@@ -85,6 +85,20 @@
   }
   }
    </style>
+  <script>
+    var userLang = navigator.language || navigator.userLanguage;
+    if ((userLang="zh-CN") || ("zh-TW")){
+        window.location.assign("https://pentestbox.org/zh/")
+    }else if (userLang="vi"){
+        window.location.assign("https://pentestbox.org/vi/")
+    }else if (userLang="pt"){
+        window.location.assign("https://pentestbox.org/pt/")
+    }else if (userLang="ar"){
+        window.location.assign("https://pentestbox.org/ar/")    
+    }else if (userLang="it"){
+        window.location.assign("https://pentestbox.org/it/")    
+    }
+  </script>
 </head>
 <body>
 
