@@ -1,77 +1,123 @@
-﻿<html lang="zh-Hans" dir="ltr">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"></meta>
-<meta name="twitter:card" content="summary"></meta>
-<meta name="twitter:site" content="@flickr"></meta>
-<meta name="twitter:title" content="PentestBox"></meta>
-<meta name="twitter:description" content="PentestBox is an Opensource PreConfigured Portable Penetration Testing Environment for Windows Operating System."></meta>
-<meta name="twitter:image" content="https://pentestbox.org/img/logo.png"></meta>
-   <meta property="og:image" content="https://i.imgur.com/HHTsh3W.png"></meta>
-   <meta property="og:description" content="PentestBox is an Opensource PreConfigured Portable Penetration Testing Environment for Windows Operating System"></meta>
-   <meta property="og:title" content="PentestBox"></meta>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@flickr" />
+<meta name="twitter:title" content="PentestBox" />
+<meta name="twitter:description" content="PentestBox is an Opensource PreConfigured Portable Penetration Testing Environment for the Windows Operating System." />
+<meta name="twitter:image" content="https://pentestbox.org/img/logo.png" />
+   <meta property="og:image" content="https://i.imgur.com/HHTsh3W.png"/>
+   <meta property="og:description" content="PentestBox is an Opensource PreConfigured Portable Penetration Testing Environment for the Windows Operating System" />
+   <meta property="og:title" content="PentestBox" />
 
-  <title>Pentest箱</title>
-  <meta name="description" content=""></meta>
+  <title>Pentest Box</title>
+  <meta name="description" content="">
   <title>PentestBox</title>
-  <link rel="shortcut icon" href="https://pentestbox.org/img/favicon.ico"></link>
+  <link rel="shortcut icon" href="https://pentestbox.org/img/favicon.ico" />
   <!-- CSS  -->
-  <link href="asset?aid=0" rel="stylesheet"></link>
-  <link href="https://pentestbox.org/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"></link>
-  <link href="https://pentestbox.org/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"></link>
-  <style>.typed-cursor {
-  opacity: 1;
-  font-weight: 100;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  -ms-animation: blink 0.7s infinite;
-  -o-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://pentestbox.org/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://pentestbox.org/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>.typed-cursor{opacity:1;font-weight:100;-webkit-animation:blink 0.7s infinite;-moz-animation:blink 0.7s infinite;-ms-animation:blink 0.7s infinite;-o-animation:blink 0.7s infinite;animation:blink 0.7s infinite;}@-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+    </style>
+         <style>
+
+   .terminal {
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  #header_cmd{
+     border: 1px solid grey;
+    background-color: white;
+    position: relative;
+    margin: 0px;
+    top: -7px;
+    padding-bottom: 7px;
+    padding-right: 12px;
+    padding-top: 0.5px;
+    margin-top: -3px;
+    margin-left: 1.5px;
+  }
+
+  .shell {
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    font-size: 17px;
+    line-height: 28px;
+    color: #cbcbcb;
+    background-color: #3d3d3d;
+    overflow: hidden;
+    padding: 10px;
+    margin: 0;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    text-align: left;
+    display: block;
+  }
+  .shell p {
+    margin: 0;
+    font-weight: none;
+    -webkit-backface-visibility: hidden;
+  }
+  }
+   </style>
+   <style>
+     @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://pentestbox.org/zh/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
 }
-</style>
-         <style>.terminal {
-  font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
-}
-#header_cmd {
-  border: 1px solid grey;
-  background-color: white;
-  position: relative;
-  margin: 0px;
-  top: -7px;
-  padding-bottom: 7px;
-  padding-right: 12px;
-  padding-top: 0.5px;
-  margin-top: -3px;
-  margin-left: 1.5px;
-}
-.shell {
-  font-family: Consolas,"Liberation Mono",Courier,monospace;
-  font-size: 17px;
-  line-height: 28px;
-  color: #cbcbcb;
-  background-color: #3d3d3d;
-  overflow: hidden;
-  padding: 10px;
-  margin: 0;
-  border-bottom-left-radius: 7px;
-  border-bottom-right-radius: 7px;
-  text-align: left;
-  display: block;
-}
-.shell p {
-  margin: 0;
-  font-weight: none;
-  -webkit-backface-visibility: hidden;
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }
 </style>
 </head>
-<body dir="ltr">
+<body>
+
   <ul id="dropdown1" class="dropdown-content">
-  <li><a href="https://facebook.com/pentestbox">Fackbook</a></li>
+  <li><a href="https://facebook.com/pentestbox">Facebook</a></li>
   <li class="divider"></li>
-  <li><a href="https://twitter.com/pentestbox">推特</a></li>
+  <li><a href="https://twitter.com/pentestbox">Twitter</a></li>
   <li class="divider"></li>
-  <li><a href="https://telegram.me/pentestbox">电报1</a></li>
+  <li><a href="https://telegram.me/pentestbox">Telegram</a></li>
   </ul>
   <nav class="light-blue blue darken-3 navbar-fixed" role="navigation">
     <div class=""> <a id="logo-container" href="https://pentestbox.org" class="brand-logo">PentestBox</a>
@@ -81,8 +127,9 @@
         <li><a href="https://docs.pentestbox.org">文档</a></li>
         <li><a href="https://docs.pentestbox.org/faq.html">常见问题</a></li>
         <li><a href="https://forum.pentestbox.org">论坛</a></li>
-        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">连接<i class="material-icons right">arrow_drop_down</i></a></li>
-        <li><a class="waves-effect waves-light btn" href="https://manifestsecurity.com">一个ManifestSecurity.com项目</a></li>
+        <li><a href="https://pentestbox.org/#contribute">贡献</a></li>
+        <li><a class="dropdown-button" href="#!" data-activates="dropdown1">联系方式<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li><a class="waves-effect waves-light btn" href="https://manifestsecurity.com">一个来自于 ManifestSecurity.com 的项目</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
@@ -91,31 +138,33 @@
         <li><a href="https://docs.pentestbox.org">文档</a></li>
         <li><a href="https://docs.pentestbox.org/faq.html">常见问题</a></li>
         <li><a href="https://forum.pentestbox.org">论坛</a></li>
-        <li><a href="https://facebook.com/pentestbox">Fackbook</a></li>
-        <li><a href="https://twitter.com/pentestbox">推特</a></li>
-        <li><a href="https://telegram.me/pentestbox">电报1</a></li>
+        <li><a href="https://pentestbox.org/#contribute">贡献</a></li>
+        <li><a href="https://facebook.com/pentestbox">Facebook</a></li>
+        <li><a href="https://twitter.com/pentestbox">Twitter</a></li>
+        <li><a href="https://telegram.me/pentestbox">Telegram</a></li>
       </ul>
-      <a href="#" class="button-collapse" data-activates="nav-mobile"><i class="material-icons">菜单</i></a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">菜单</i></a>
     </div>
   </nav>
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
     <br><br><br>
 
-      <h1 class="header center orange-text"><img src="img/logo.png" height="100" width="100" alt="商標"> PentestBox</h1>
+      <h1 class="header center orange-text"><img src="https://pentestbox.org/img/logo.png" height="100" width="100" alt="logo" >PentestBox</h1>
       <div class="row center">
-        <h5 class="header col s12 light">PentestBox是一个开源的预配置便携式渗透测试环境为Windows操作系统</h5>
-        <a class="waves-effect waves-light btn-large smoothscroll z-depth-2" href="#download"><i class="material-icons right">file_download</i>下载</a> <a class="waves-effect waves-light btn-large smoothscroll z-depth-2" href="#features">功能</a>
+        <h5 class="header col s12 light">PentestBox是一款Windows平台下预配置的便携式开源渗透测试环境</h5>
+        <a class="waves-effect waves-light btn-large smoothscroll z-depth-2" href="#download"><i class="material-icons right">file_download</i>下载</a> <a class="waves-effect waves-light btn-large smoothscroll z-depth-2" href="#features">特性</a>
 
       </div>
-      <div class="header" style="text-align:left;background-color:rgb(245,246,247)"><span id="header_cmd">CMD.EXE</span></div>
+      <div class="header" style="text-align:left;background-color:rgb(245,246,247);"><span id="header_cmd">&nbsp;&nbsp;cmd.exe</span></div>
                  <div class="shell">
-                   <p style="color:rgb(144,209,12)">C：\用户\阿迪亚阿格拉瓦尔\桌面</p>
-                   <p style="text-align:left"><span class="prompt" style="color:rgb(88,114,126)">&gt;</span> <span id="typed"></span> <!--    <div class="row center">
+                   <p style="color:rgb(144,209,12);">C:\Users\Aditya Agrawal\Desktop</p>
+                   <p style="text-align:left;"><span class="prompt" style="color:rgb(88,114,126);" > > </span><span id="typed"></span>
+  <!--    <div class="row center">
         <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
       </div> -->
 
-    </p></div>
+    </div>
     <br>
     <br>
 
@@ -124,11 +173,11 @@
   <div class=" container">
       <div class="divider"></div>
     <div class="section">
-      <h3 class="header center blue-grey-text">为什么另一分布渗透测试？</h3>
+      <h3 class="header center blue-grey-text">为什么又有一个渗透测试环境？</h3>
         <div class="row center">
-          <h5 class="header col s12 light">PentestBox不像其他Linux发行渗透测试其无论是在虚拟机或双启动环境不受运行。</h5>
-          <h5 class="header col s12 light">它实际上提供的所有安全工具软件包，让你在Windows上运行它们本身，消除了对Windows虚拟机或环境的DualBoot的要求。</h5>
-          <h5 class="header col s12 light">它的形成是因为渗透测试的用户分布超过50％使用虚拟机来运行Windows操作系统的发行。[ <a href="download_stats.txt" target="_blank">来源</a> ]</h5>
+          <h5 class="header col s12 light">PentestBox不同于运行在虚拟机或者双启动环境的Linux渗透测试发行版。</h5>
+          <h5 class="header col s12 light">它打包了所有的安全工具，并且可以在Windows系统中原生地运行，有效地降低了对虚拟机或者双启动环境的需求。</h5>
+          <h5 class="header col s12 light">我们发现超过50%的渗透测试发行版是运行在Windows系统下的虚拟机程序中，这激发我们创造了它。[<a href="download_stats.txt" target="_blank"> 源代码</a>]</h5>
 
         </div>
       </div>
@@ -138,124 +187,124 @@
 <div class="container" id="features">
 	 <div class="section">
       <!--   Icon Section   -->
-      <div class="row">
-        <h3 class="header center orange-text">功能</h3>
+      <div class="row" >
+        <h3 class="header center orange-text">特性</h3>
         <div class="col s12 m3 ">
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">insert_emoticon</i></h2>
-            <h5 class="center">{0}·{/0}{1}       {/1}{2}使用便捷{/2}</h5>
+            <h5 class="center">易于使用</h5>
 
-            <p class="center">这是一个简单的命令行工具。</p>
+            <p class="center">只是一个简单的命令行工具。</p>
           </div>
         </div>
 
         <div class="col s12 m3 ">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">集Group </i></h2>
-            <h5 class="center">简单设计</h5>
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">设计简洁</h5>
 
-            <p class="center">它是黑色的终端上，但以现代的方式相同的绿色字体。</p>
+            <p class="center">不同于传统的绿字黑色背景终端。</p>
           </div>
         </div>
 
         <div class="col s12 m3 ">
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">业绩</h5>
+            <h5 class="center">性能卓越</h5>
 
-            <p class="center">PentestBox直接运行主机，而不是虚拟机上，所以性能是显而易见的。</p>
+            <p class="center">直接运行在主机上而不依赖于虚拟机，性能明显改善。</p>
           </div>
         </div>
         <div class="col s12 m3 ">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">build();</i></h2>
-            <h5 class="center">没有依赖项所需</h5>
+            <h2 class="center light-blue-text"><i class="material-icons">build</i></h2>
+            <h5 class="center">没有依赖需求</h5>
 
-            <p class="center">所有工具所需要的相关性都在里面PentestBox，所以你甚至可以在新安装的Windows上运行PentestBox没有任何麻烦。</p>
+            <p class="center">所有的依赖需求都已经安装在 PentestBox 内部，甚至可以直接在新安装的 Windows 系统上运行。</p>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col s12 m3 ">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">USB</i></h2>
-            <h5 class="center">轻便易携带</h5>
+            <h2 class="center light-blue-text"><i class="material-icons">usb</i></h2>
+            <h5 class="center">方便携带</h5>
 
-            <p class="center">PentestBox是完全可移植的，所以现在你可以在U盘随身携带自己的渗透测试环境。这将需要运行这些工具所需的所有的依赖和配置的照顾。</p>
+            <p class="center">PentestBox 具有高度的便携性，现在可以将您的渗透测试环境直接放在USB存储设备中。它完美得解决了运行工具所需要的所有依赖和配置。</p>
           </div>
         </div>
 
         <div class="col s12 m3 ">
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">extension</i></h2>
-            <h5 class="center">Linux的工具</h5>
+            <h5 class="center">Linux 工具集</h5>
 
-            <p class="center">PentestBox包含了几乎所有的Linux工具诸如bash，猫，CHMOD，卷曲，混帐，gzip的，LS，MV，PS，SSH，SH的uname等。它甚至包含你喜欢的文本编辑器“VIM”。对于完整列表，请看看<a href="https://tools.pentestbox.org/#linux-utilities" target="_blank&quot;">tools.pentestbox.org/#linux-utilities</a> 。</p>
+            <p class="center">PentestBox 包含了几乎所有的Linux工具集，比如bash、cat、chmod、curl、git、gzip、ls、mv、ps、ssh、sh、uname等。它甚至包含了编辑器之神"vim"。详细列表请参考 <a href="https://tools.pentestbox.org/#linux-utilities" target=_blank">tools.pentestbox.org/#linux-utilities</a>.</p>
           </div>
         </div>
 
         <div class="col s12 m3 ">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">设置</i></h2>
-            <h5 class="center">没有驱动程序问题</h5>
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">无驱动问题</h5>
 
-            <p class="center">Windows已经很大支持图形卡和无线驱动程序。所以，现在你不用担心司机compaitability问题。比如现在你可以用你的GPU供电采用项目RainbowCrack这是特别不能在Linux环境compaitable破解哈希。</p>
+            <p class="center">Windows 平台已经有了完善的图形卡和无线网络驱动支持，不用担心驱动兼容性问题。假如您想使用 RainbowCrack 驱动GPU破解 Hash，这在类 Linux 环境下是无法实现的，但是 PentestBox 可以帮您完成。</p>
           </div>
         </div>
         <div class="col s12 m3 ">
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">view_module</i></h2>
-            <h5 class="center">盒式架构</h5>
+            <h5 class="center">模块化</h5>
 
-            <p class="center">在PentestBox的决策，我们只包括了最好的工具，但在这一过程中，我们已经错过了，你可能需要使用一些工具。在这种情况下，您可以轻松安装使用这些工具<a href="https://docs.pentestbox.org/toolsmanager.html" target="_blank&quot;">toolsmanager</a>呈现里面PentestBox，它可以安装/升级/卸载工具，这是不存在的PentestBox。</p>
+            <p class="center">在开发 PentestBox 的过程中，我们总是选择最好的工具，但是我们仍然可能错过了一些您想要使用的工具。您可以使用 PentestBox 内置的 <a href="https://docs.pentestbox.org/toolsmanager.html" target=_blank">toolsmanager</a> 轻松安装/更新/卸载您想使用的工具。</p>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col s12 m3 ">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">记忆</i></h2>
-            <h5 class="center">使用更少的内存</h5>
+            <h2 class="center light-blue-text"><i class="material-icons">memory</i></h2>
+            <h5 class="center">更少的内存占用</h5>
 
-            <p class="center">PentestBox主机计算机上运行，​​而不需要任何虚拟机。因此，唯一需要的20 MB发动相比RAM需要至少在2GB的运行的虚拟机分布。</p>
+            <p class="center">PentestBox 运行不需要虚拟机的支持，与运行在虚拟机上的至少占用2GB内存的发行版相比，仅需要20MB的内存。</p>
           </div>
         </div>
 
         <div class="col s12 m3 ">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">保存</i></h2>
-            <h5 class="center">更少的磁盘使用情况</h5>
+            <h2 class="center light-blue-text"><i class="material-icons">storage</i></h2>
+            <h5 class="center">更少的磁盘占用</h5>
 
-            <p class="center">这是在磁盘上非常的轻，只获得不到三千万的的Linux发行版的渗透测试。</p>
+            <p class="center">PentestBox 需要的外部存储空间亦非常少，甚至不到典型 Linux 渗透测试发行版的1/3。</p>
           </div>
         </div>
 
         <div class="col s12 m3 ">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">计算机</i></h2>
-            <h5 class="center">内置的浏览器</h5>
+            <h2 class="center light-blue-text"><i class="material-icons">computer</i></h2>
+            <h5 class="center">内置浏览器</h5>
 
-            <p class="center">PentestBox包含一个版本的Mozilla Firefox浏览器的几乎所有安全插件。要知道插件的完整列表，请点击<a href="https://addons.mozilla.org/en-US/firefox/collections/pentestbox/pentestbox-addons-collection/" target="_blank">这里</a> 。</p>
+            <p class="center">PentestBox 内置一个安装有几乎所有安全相关插件的 Firefox 浏览器，详细插件列表请点击<a href="https://addons.mozilla.org/en-US/firefox/collections/pentestbox/pentestbox-addons-collection/" target="_blank">这里</a>.</p>
           </div>
         </div>
         <div class="col s12 m3 ">
           <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">更新</i></h2>
-            <h5 class="center">更新功能</h5>
+            <h2 class="center light-blue-text"><i class="material-icons">update</i></h2>
+            <h5 class="center">可更新特性</h5>
 
-            <p class="center">它包含一个更新功能，通过它可以让你的工具更新。要了解更多关于更新功能，请点击<a href="https://docs.pentestbox.org/update.html" target="_blank">这里</a> 。</p>
+            <p class="center">PentestBox 包含有更新模块，可以保持您的工具总是处于最新版本。关于可更新特性的详细信息，请点击<a href="https://docs.pentestbox.org/update.html" target="_blank">这里</a>.</p>
           </div>
         </div>
       </div>
       <div class="row">
-    	<div class="col s12 m3 " style="padding:12%"></div>
+    	<div class="col s12 m3 " style="padding:12%;"></div>
 
         <div class="col s12 m3 ">
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">device_hub</i></h2>
-            <h5 class="center">可以在网络共享</h5>
+            <h5 class="center">易于分享</h5>
 
-            <p class="center">考虑要使用PentestBox像办公室，实验室等，而不是在每个计算机上安装PentestBox的多台计算机的环境，你可以安装一台计算机上，共享该文件夹为一个驱动器到其他计算机上的相同网络。查看该功能<a href="https://docs.pentestbox.org/install.html#sharing-pentestbox-on-a-network" target="_blank">在这里</a> 。</p>
+            <p class="center">您可能想在办公室、实验室等场所的电脑上都能使用 PentestBox，现在不用在每一台机器上都安装一次 PentestBox，您可以将 PentestBox 安装到一个共享目录中，这样您就可以在整个网络中使用同一个 PentestBox。关于这个特性的详细信息请点击<a href="https://docs.pentestbox.org/install.html#sharing-pentestbox-on-a-network" target="_blank">这里</a>.</p>
           </div>
         </div>
 
@@ -265,45 +314,41 @@
 
             <h5 class="center">32位系统支持</h5>
 
-            <p class="center">大多数用户并不关心支持32位，因为他们通常使用64位系统。但这种引入，使低端系统到一个环境渗透测试。只给一个想法，我已经测试PentestBox在<a href="http://www.amazon.com/ASUS-X205TA-11-6-Laptop-Intel/dp/B00SGS7ZII" target="_blank">此$ 200机床</a> ，它运行在它非常顺利。</p>
+            <p class="center">尽管对于大部分使用64位系统的用户来说，他们并不关心32位系统的支持。但是在一些低端的渗透测试环境中，这仍然很重要。PentestBox 已经在<a href="http://www.amazon.com/ASUS-X205TA-11-6-Laptop-Intel/dp/B00SGS7ZII" target="_blank">这款价值200美元的机器</a>上通过测试。</p>
           </div>
         </div>
       </div>
 </div>
 
 </div>
-    <div class="" style="text-align:center;padding:10px 10px 10px 10px">
-         <iframe width="853" height="480" src="https://www.youtube.com/embed/0-FV3_Jafws?html5=1" frameborder="0" allowfullscreen=""></iframe>
-      </div>
 
 <div class="container" id="download">
   <div class="divider"></div>
   <div class="header">
-    <h3 class="header left-align blue-grey-text">从右侧选择下载选项</h3>
+    <h3 class="header left-align blue-grey-text">右边选择下载选项</h3>
       <div class="row">
-		      <div class="col s7">
-		        <p style="line-height:1.8em">有PentestBox的两个变种，一个没有Metasploit的和另一个与Metasploit的。
-         <br>防病毒软件和防火墙需要被关闭，以安装和操作使用Metasploit工具的版本。
-				<br>通过单击右侧相应的下载按钮下载存在任何变种。
-				<br>默认情况下安装程序解压到<b>C：/ PentestBox /</b>和其正常运转不作任何更改。
-					<br>现在参阅<a href="https://tools.pentestbox.org/" target="_blank">tools.pentestbox.org</a>和<a href="https://docs.pentestbox.org" target="_blank">docs.pentestbox.org</a>了解的工具的使用。
-					<br>如果您遇到任何问题或有任何疑问，请查看<a href="https://faq.pentestbox.org" target="_blank">faq.pentestbox.org</a>或张贴您的问题<a href="https://forum.pentestbox.org" target="_blank">forum.pentestbox.org。</a>与我们连接上<a href="https://www.facebook.com/pentestbox" target="_blank">的Facebook</a>或<a href="https://twitter.com/pentestbox" target="_blank">Twitter的</a>获取有关PentestBox更新。<br>发现这个项目有意思！还有你可以贡献很多方法，检查<a href="https://docs.pentestbox.org/contributing.html" target="_blank">docs.pentestbox.org/contributing</a></p>
+		      <div  class="col s7">
+		        <p style="line-height:1.8em;">
+					 这里提供两个版本的 PentestBox 下载，一款安装了 Metasploit，另一款没有安装。
+           <br>在安装和使用“安装有 Metasploit 的 PentestBox” 时请关闭杀毒软件和防火墙。默认释放安装在 <b>C:/PentestBox/</b>，请不要做任何修改以保证功能完整，点击右边相应的按钮下载对应版本的PentestBox。
+           <br>现在请参考<a href="https://tools.pentestbox.org/" target="_blank"> tools.pentestbox.org </a> 和<a href="https://docs.pentestbox.org" target="_blank"> docs.pentestbox.org </a> 以了解本工具的使用方法。
+           <br>如果您在使用过程中遇到了任何问题，请检索<a href="https://faq.pentestbox.org" target="_blank"> faq.pentestbox.org </a> 或者在<a href="https://forum.pentestbox.org" target="_blank"> forum.pentestbox.org </a>提交您的问题。
+           <br>通过<a href="https://www.facebook.com/pentestbox" target="_blank"> Facebook </a> 或者<a href="https://twitter.com/pentestbox" target="_blank"> Twitter </a> 联系我们以得到更新信息。
+           <br>如果您对这个项目感兴趣，想做出一份贡献，请参考<a href="https://docs.pentestbox.org/contributing.html" target="_blank"> docs.pentestbox.org/contributing </a>。</p>
 		       </div>
-
-
-			  <div class="col s5">
+			  <div  class="col s5">
 
 
 			  <h5>PentestBox</h5>
-<a href="https://sourceforge.net/projects/pentestbox/files/PentestBox-v2.2.exe/download" target="_blank"><img src="img/sf-download-button.png"></a>
-<a href="https://pentestbox.org/PentestBox-v2.2.torrent" target="_blank"><img src="img/torrent-button.png"></a>
+<a href="https://sourceforge.net/projects/pentestbox/files/PentestBox-v2.2.exe/download" target="_blank"><img src="https://pentestbox.org/img/sf-download-button.png"></a>
+<a href="https://pentestbox.org/PentestBox-v2.2.torrent" target="_blank"><img src="https://pentestbox.org/img/torrent-button.png"></a>
 
-			  <h5>PentestBox与Metasploit的</h5>
-			  <a class="modal-trigger" href="#modal2"><img src="img/sf-download-button.png"></a>
-        <a class="modal-trigger" href="#modal3"><img src="img/torrent-button.png"></a>
+			  <h5>安装有 Metasploit 的 PentestBox </h5>
+			  <a class="modal-trigger" href="#modal2"><img src="https://pentestbox.org/img/sf-download-button.png"></a>
+        <a class="modal-trigger" href="#modal3"><img src="https://pentestbox.org/img/torrent-button.png"></a></a>
 
 
-          <p>请不要在超过上面给出的链接其他任何来源下载PentestBox。</p>
+          <p>请不要在除以上地址以外的其它链接下载PentestBox。</p>
 
 			   </div>
 
@@ -311,14 +356,14 @@
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
     <div class="modal-content">
-    <p>从SourceForge下载</p>
-      <a class="waves-effect waves-light" href="https://sourceforge.net/projects/pentestbox/files/PentestBox-v2.2.exe/download" target="_blank" onclick="Materialize.toast(&#39;Thanks for downloading!&#39;, 6000, &#39;rounded&#39;)">
-			    <img src="img/sf-download-button.png"></a>
+    <p>从 sourceforge 下载</p>
+      <a class="waves-effect waves-light" href="https://sourceforge.net/projects/pentestbox/files/PentestBox-v2.2.exe/download" onclick="Materialize.toast('Thanks for downloading!', 6000, 'rounded')" target="_blank">
+			    <img src="https://pentestbox.org/img/sf-download-button.png"></a>
 			    <br>
 
-	<p>从Torrent下载</p>
-			    <a class="waves-effect waves-light" href="https://pentestbox.org/PentestBox-v2.2.torrent" target="_blank" onclick="Materialize.toast(&#39;Thanks for downloading!&#39;, 6000, &#39;rounded&#39;)">
-			    <img src="img/torrent-button.png"></a>
+	<p>种子下载</p>
+			    <a class="waves-effect waves-light" href="https://pentestbox.org/PentestBox-v2.2.torrent" onclick="Materialize.toast('Thanks for downloading!', 6000, 'rounded')" target="_blank">
+			    <img src="https://pentestbox.org/img/torrent-button.png"></a>
     </div>
     <div class="modal-footer">
       <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">关闭</a>
@@ -327,20 +372,22 @@
 
   <div id="modal2" class="modal">
     <div class="modal-content">
-    <p>注意：您需要关闭您的防病毒和防火墙安装和操作“PentestBox与Metasploit工具”的版本。</p>
-    <p>点击同意继续下载。</p>
+    <p>注意: 您需要关闭杀毒软件和防火墙来安装和使用“安装有 Metasploit 的 PentestBox”版本。</p>
+    <p>点击同意以继续下载。</p>
     </div>
     <div class="modal-footer">
-      同意 不同意
+      <a href="https://sourceforge.net/projects/pentestbox/files/PentestBox-with-Metasploit-v2.2.exe/download" target="_blank" class=" modal-action modal-close waves-effect waves-green btn-flat">同意</a>
+      <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">不同意</a>
     </div>
   </div>
   <div id="modal3" class="modal">
     <div class="modal-content">
-    <p>注意：您需要关闭您的防病毒和防火墙安装和操作“PentestBox与Metasploit工具”的版本。</p>
-    <p>点击同意继续下载。</p>
+    <p>注意: 您需要关闭杀毒软件和防火墙来安装和使用“安装有 Metasploit 的 PentestBox”版本。</p>
+    <p>点击同意以继续下载。</p>
     </div>
     <div class="modal-footer">
-      同意 不同意
+      <a href="https://pentestbox.org/PentestBox-with-Metasploit-v2.2.torrent" target="_blank" class=" modal-action modal-close waves-effect waves-green btn-flat">同意</a>
+      <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">不同意</a>
     </div>
   </div>
 
@@ -349,150 +396,87 @@
 <div class="divider"></div>
 
 </div>
-<div class="container" id="testimonials">
-        <!--   Icon Section   -->
-        <h3 class="header center orange-text">超过10万的用户喜欢PentestBox。</h3>
-        <h5 class="header center blue-grey-text">这里是其中的几个不得不说。</h5>
-        <div class="row">
-          <div class="col s12 m4 14">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="zh-Hans" dir="ltr">对于pentester好消息:) <a href="https://t.co/agCVZsYAgd">https://t.co/agCVZsYAgd</a></p>- Chandrakant尼亚尔（@Chandrakantnial） <a href="https://twitter.com/Chandrakantnial/status/727348910998605824">2016年5月3日</a></blockquote>
-          </div>
-          <div class="col s12 m4 l4">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="de" dir="ltr">检查现在MAL死PentestBox ausprobieren。Sieht雅适vielversprechend AUS。 <a href="https://t.co/uEO4AHh4fx">https://t.co/uEO4AHh4fx</a></p>-菲利普约翰·弗里茨（@ pjf166） <a href="https://twitter.com/pjf166/status/727420727599726593">2016年5月3日</a></blockquote>
-            <script src="https://platform.twitter.com/widgets.js" async="" charset="utf-8"></script>
-          </div>
-          <div class="col s12 m4 14">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="zh-Hans" dir="ltr"><a href="https://twitter.com/exploitprotocol">@exploitprotocol</a>干得好上<a href="https://twitter.com/pentestbox">@pentestbox</a> -</p>-史蒂夫（@spythedude） <a href="https://twitter.com/spythedude/status/715227974509993984">2016年3月30日，</a></blockquote>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s12 m4 l4">
-            <blockquote class="twitter-tweet" data-lang="en" data-cards="hidden"><p lang="zh-Hans" dir="ltr">我知道，你一定会喜欢这个:)<br>PentestBox V2.0演示<a href="https://t.co/sxlCGmYjLE">https://t.co/sxlCGmYjLE</a></p>-奎略Whatchaing（@LD_Neck） <a href="https://twitter.com/LD_Neck/status/714960606072274946">2016年3月29日</a></blockquote>
-          </div>
-          <div class="col s12 m4 14">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="zh-Hans" dir="ltr">I &lt;3 pentestbox</p>-优素福（@FesoyRenzrek） <a href="https://twitter.com/FesoyRenzrek/status/697619201196957696">2016年2月11日，</a></blockquote>
-          </div>
-          <div class="col s12 m4 l4">
-          <blockquote class="twitter-tweet" data-lang="en"><p lang="zh-Hans" dir="ltr">我认为Pentest框将被更换为我的VB的。</p>- c0mrad（@ _c0mrad） <a href="https://twitter.com/_c0mrad/status/689942058149216257">2016年1月20日</a></blockquote>
-        </div>
-      </div>
-      <div class="row">
-          <div class="col s12 m4 l4">
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="zh-Hans" dir="ltr">JSQL注射精选<a href="https://twitter.com/pentestbox">@pentestbox</a>演示视频<a href="https://t.co/qyeJGY8m8R">https://t.co/qyeJGY8m8R</a></p>- ron190（@ ron190jsql） <a href="https://twitter.com/ron190jsql/status/686241602101182464">2016年1月10日</a></blockquote>
-          </div>
-        <div class="col s12 m4 l4">
-          <blockquote class="twitter-tweet" data-lang="en"><p lang="es" dir="ltr">MUY interesante，第probar .... <a href="https://t.co/eGaoy1MwOx">https://t.co/eGaoy1MwOx</a></p>-古斯塔沃斯佩兰扎（@gjs_sj） <a href="https://twitter.com/gjs_sj/status/680992637525045249">2015年12月27日，</a></blockquote>
-      </div>
-      <div class="col s12 m4 l4">
-        <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="zh-Hans" dir="ltr">PentestBox <a href="https://t.co/uM8uhx5tqr">https://t.co/uM8uhx5tqr</a><br>轻便易携带<br>- 可定制<br>Update = function(){
-<br>工具<a href="https://t.co/M5JR1BjgeA">https://t.co/M5JR1BjgeA</a> ICYMI <a href="https://t.co/kHCRS8nT0Y">pic.twitter.com/kHCRS8nT0Y</a></p>-弗洛里安·罗斯（@ cyb3rops） <a href="https://twitter.com/cyb3rops/status/680666052892712960">2015年12月26日</a></blockquote>
-      </div>
-    </div>
-        <div class="row">
-          <div class="col s12 m4 l4">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="zh-Hans" dir="ltr">酷项目的窗户偷看！<a href="https://t.co/NQ2RmU0Doe">https://t.co/NQ2RmU0Doe</a> <a href="https://twitter.com/hashtag/windows?src=hash">#windows</a> <a href="https://twitter.com/hashtag/shellz?src=hash">#shellz</a></p>- D0ctan3（@linuxoctane） <a href="https://twitter.com/linuxoctane/status/647404217234288640">2015年9月25日</a></blockquote>
-          </div>
-          <div class="col s12 m4 l4">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="zh-Hans" dir="ltr">For the windows lovers <a href="https://t.co/NSj7VWGbHG">https://t.co/NSj7VWGbHG</a> is good alternative Cc <a href="https://twitter.com/riyazwalikar">@riyazwalikar</a> <a href="https://twitter.com/exploitprotocol">@exploitprotocol</a>  <a href="https://twitter.com/hashtag/Nullblr?src=hash">#Nullblr</a> <a href="https://twitter.com/hashtag/owaspblr?src=hash">#owaspblr</a></p>-阿比纳夫Sejpal（@Abhinav_Sejpal） <a href="https://twitter.com/Abhinav_Sejpal/status/637495428884226048">2015年8月29日</a></blockquote>
-          </div>
-          <div class="col s12 m3 l4">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="zh-Hans" dir="ltr">我找到了。PentestBox</p>比尔- Sempf（@sempf） <a href="https://twitter.com/sempf/status/626491258341617664">2015年7月29日，</a></blockquote>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col s12 m4 l4">
-            <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="ru" dir="ltr">PentestBox - портативнаясборкапопулярных安全утилит <a href="http://t.co/kRKQUZ3tax">http://t.co/kRKQUZ3tax</a> <a href="https://twitter.com/pentestbox">@pentestbox</a></p>-卢卡萨福诺夫（@lukasafonov） <a href="https://twitter.com/lukasafonov/status/613703913431257089">2015年6月24日，</a></blockquote>
-          </div>
-          <div class="col s12 m4 l4">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="zh-Hans" dir="ltr">看看这个真棒项目::<br><br>PentestBox：一个便携式渗透测试的Windows。 <a href="https://t.co/h7GD1E7wJv">https://t.co/h7GD1E7wJv</a></p>-黑客新闻（@TheHackersNews） <a href="https://twitter.com/TheHackersNews/status/612160004964003840">2015年6月20日，</a></blockquote>
-          </div>
-          <div class="col s12 m4 l4">
-            <blockquote class="twitter-tweet" data-lang="en"><p lang="zh-Hans" dir="ltr">因为我们不能利用Windows从我们的生活中。GUD工作<a href="https://twitter.com/exploitprotocol">@exploitprotocol</a> 。WIL很快就试试吧。 <a href="https://t.co/k6YVQOi6pN">https://t.co/k6YVQOi6pN</a></p>- LOKESH（@ MaverickRocky02） <a href="https://twitter.com/MaverickRocky02/status/605801473276919809">2015年6月2日，</a></blockquote>
-          </div>
-        </div>
-        <div class="divider"></div>
-
-</div>
 <div class="container" id="reviews">
         <!--   Icon Section   -->
-        <h3 class="header center orange-text">阅读一些公众审查你的母语。</h3>
+        <h3 class="header center orange-text">全球用户的公开评论</h3>
         <div class="row">
           <div class="col s12 m4 l4">
             <div class="icon-block">
-              <h4 class="left-align">俄语、</h4>
+              <h4 class="left-align"><img src="https://pentestbox.org/flags/ru.svg" width=50 height=40> 俄罗斯</h4>
               <ul>
-                <li><a href="https://habrahabr.ru/company/pentestit/blog/260913/" target="_blank"><i class="material-icons">label_outline</i> PentestBox - портативнаясборкапопулярных安全утилит</a></li>
-                <li><a href="https://habrahabr.ru/company/pentestit/blog/276477/" target="_blank"><i class="material-icons">label_outlineЛучшиедистрибутивыдляпроведениятестированиянапроникновение</i></a></li>
-                <li><a href="https://cryptoworld.su/%D1%85%D0%B0%D0%BA%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%81%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B8%D0%B2-%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B7%D0%B5-windows/" target="_blank"><i class="material-icons">label_outlineХакерскийдистрибутивнабазе</i>的Windows</a></li>
-            </ul></div>
+                <li><a href="https://habrahabr.ru/company/pentestit/blog/260913/" target="_blank"><i class="material-icons">label_outline</i> PentestBox — портативная сборка популярных security утилит</a></li>
+                <li><a href="https://habrahabr.ru/company/pentestit/blog/276477/" target="_blank"><i class="material-icons">label_outline</i> Лучшие дистрибутивы для проведения тестирования на проникновение</a></li>
+                <li><a href="https://cryptoworld.su/%D1%85%D0%B0%D0%BA%D0%B5%D1%80%D1%81%D0%BA%D0%B8%D0%B9-%D0%B4%D0%B8%D1%81%D1%82%D1%80%D0%B8%D0%B1%D1%83%D1%82%D0%B8%D0%B2-%D0%BD%D0%B0-%D0%B1%D0%B0%D0%B7%D0%B5-windows/" target="_blank"><i class="material-icons">label_outline</i> Хакерский дистрибутив на базе Windows</a></li>
+            </div>
           </div>
           <div class="col s12 m4 l4">
             <div class="icon-block">
-              <h4 class="left-align">法国</h4>
+              <h4 class="left-align"><img src="https://pentestbox.org/flags/fr.svg" width=50 height=40> 法国</h4>
               <ul>
                 <li><a href="http://korben.info/pentestbox.html" target="_blank"><i class="material-icons">label_outline</i> PentestBox -Korben</a></li>
-                <li><a href="http://www.funinformatique.com/pentestbox-sinitier-au-pentest-sous-windows/" target="_blank"><i class="material-icons">label_outline</i> PentestBox：s'initier金pentest苏的Windows</a></li>
-            </ul></div>
+                <li><a href="http://www.funinformatique.com/pentestbox-sinitier-au-pentest-sous-windows/" target="_blank"><i class="material-icons">label_outline</i> PentestBox: s’initier au pentest sous Windows</a></li>
+            </div>
           </div>
           <div class="col s12 m4 l4">
             <div class="icon-block">
-              <h4 class="left-align">西班牙语</h4>
+              <h4 class="left-align"><img src="https://pentestbox.org/flags/es.svg" width=50 height=40> 西班牙</h4>
               <ul>
-                <li><a href="http://blog.segu-info.com.ar/2015/08/pentestbox-pentesting-portable-en-linea.html" target="_blank"><i class="material-icons">label_outline</i> PentestBox：便携式渗透测试连接拉利内阿德comandos</a></li>
-                <li><a href="http://www.cyberhades.com/2015/06/04/coleccion-de-herramientas-de-pentesting-para-entornos-windows/" target="_blank"><i class="material-icons">label_outline</i> COLECCION德HERRAMIENTAS德“渗透测试”对entornos的Windows</a></li>
-                <li><a href="http://www.redeszone.net//2015/06/04/pentest-box-sera-tu-herramienta-favorita-de-pentesting-para-sistemas-windows/" target="_blank"><i class="material-icons">label_outline</i> Pentest盒血清涂herramienta费乌瑞德段渗透测试的Windows SISTEMAS</a></li>
-                <li><a href="http://www.hackingpublico.net/pentestbox-pentesting-en-windows/" target="_blank"><i class="material-icons">label_outline</i> PentestBox |恩渗透测试的Windows</a></li>
-            </ul></div>
-          </div></div>
+                <li><a href="http://blog.segu-info.com.ar/2015/08/pentestbox-pentesting-portable-en-linea.html" target="_blank"><i class="material-icons">label_outline</i> PentestBox: Pentesting portable en línea de comandos</a></li>
+                <li><a href="http://www.cyberhades.com/2015/06/04/coleccion-de-herramientas-de-pentesting-para-entornos-windows/" target="_blank"><i class="material-icons">label_outline</i> Colección de herramientas de “pentesting” para entornos Windows</a></li>
+                <li><a href="http://www.redeszone.net//2015/06/04/pentest-box-sera-tu-herramienta-favorita-de-pentesting-para-sistemas-windows/" target="_blank"><i class="material-icons">label_outline</i> Pentest Box será tu herramienta favorita de pentesting para sistemas Windows</a></li>
+                <li><a href="http://www.hackingpublico.net/pentestbox-pentesting-en-windows/" target="_blank"><i class="material-icons">label_outline</i> PentestBox | Pentesting en Windows</a></li>
+            </div>
+          </div
+        </div>
         <div class="row">
           <div class="col s12 m4 l4">
             <div class="icon-block">
-              <h4 class="left-align">土耳其语</h4>
+              <h4 class="left-align"><img src="https://pentestbox.org/flags/tr.svg" width=50 height=40> 土耳其</h4>
               <ul>
-                <li><a href="http://ramazanguclu.com.tr/windows-ortaminda-linux-rahatligi-pentestbox-tools/" target="_blank"><i class="material-icons">label_outline</i>的WindowsOrtamındaLinux的Rahatlığı - PentestBox工具</a></li>
-            </ul></div>
+                <li><a href="http://ramazanguclu.com.tr/windows-ortaminda-linux-rahatligi-pentestbox-tools/" target="_blank"><i class="material-icons">label_outline</i> Windows Ortamında Linux Rahatlığı – PentestBox Tools</a></li>
+            </div>
           </div>
           <div class="col s12 m4 l4">
             <div class="icon-block">
-              <h4 class="left-align"><img src="flags/pt.svg" width="50" height="40">葡萄牙</h4>
+              <h4 class="left-align"><img src="https://pentestbox.org/flags/pt.svg" width=50 height=40> 葡萄牙</h4>
               <ul>
-                <li><a href="http://www.100security.com.br/pentestbox/" target="_blank"><i class="material-icons">label_outline</i> PenTestBox - FERRAMENTA德PenTest（视窗）</a></li>
-                <li><a href="http://securityattack.com.br/pentest-box-ferramentas-de-seguranca-no-windows/" target="_blank"><i class="material-icons">label_outline</i> Pentest盒- Ferramentas德segurança无窗</a></li>
-            </ul></div>
+                <li><a href="http://www.100security.com.br/pentestbox/" target="_blank"><i class="material-icons">label_outline</i> PenTestBox – Ferramenta de PenTest (Windows)</a></li>
+                <li><a href="http://securityattack.com.br/pentest-box-ferramentas-de-seguranca-no-windows/" target="_blank"><i class="material-icons">label_outline</i> Pentest Box – Ferramentas de segurança no Windows</a></li>
+            </div>
           </div>
           <div class="col s12 m4 l4">
             <div class="icon-block">
-              <h4 class="left-align"><img src="flags/ro.svg" width="50" height="40">罗马尼亚</h4>
+              <h4 class="left-align"><img src="https://pentestbox.org/flags/ro.svg" width=50 height=40> 罗马尼亚</h4>
               <ul>
-                <li><a href="http://www.worldit.info/articole/cum-poti-face-teste-de-securitate-it-penetration-testing-folosind-windows/" target="_blank"><i class="material-icons">label_outline</i>射精波蒂脸睾丸德秘密部门IT（渗透测试）folosind的Windows？</a></li>
-            </ul></div>
+                <li><a href="http://www.worldit.info/articole/cum-poti-face-teste-de-securitate-it-penetration-testing-folosind-windows/" target="_blank"><i class="material-icons">label_outline</i> Cum poti face teste de securitate IT (Penetration Testing) folosind Windows?</a></li>
+            </div>
           </div>
         </div>
         <div class="row">
           <div class="col s12 m4 l4">
             <div class="icon-block">
-              <h4 class="left-align">阿</h4>
+              <h4 class="left-align">阿拉伯</h4>
               <ul>
-                <li><a href="http://www.th3professional.com/2015/09/pentest-box.html" target="_blank"><i class="material-icons">label_outline</i> Pentest箱منصةاختبارالاختراقوالحمايةلمستخدميويندوز</a></li>
-            </ul></div>
+                <li><a href="http://www.th3professional.com/2015/09/pentest-box.html" target="_blank"><i class="material-icons">label_outline</i> Pentest Box منصة اختبار الاختراق والحماية لمستخدمي ويندوز</a></li>
+            </div>
           </div>
           <div class="col s12 m4 l4">
             <div class="icon-block">
-              <h4 class="left-align">泰语</h4>
+              <h4 class="left-align"><img src="https://pentestbox.org/flags/th.svg" width=50 height=40> 泰国</h4>
               <ul>
-                <li><a href="https://www.techtalkthai.com/pentest-box-portable-tool-for-windows/" target="_blank"><i class="material-icons">label_outline</i> Pentest盒： เครื่องมือทดสอบเจาะระบบแบบพกพาสำหรับ视窗</a></li>
-            </ul></div>
+                <li><a href="https://www.techtalkthai.com/pentest-box-portable-tool-for-windows/" target="_blank"><i class="material-icons">label_outline</i> Pentest Box: เครื่องมือทดสอบเจาะระบบแบบพกพาสำหรับ Windows</a></li>
+            </div>
           </div>
           <div class="col s12 m4 l4">
             <div class="icon-block">
-              <h4 class="left-align">英语</h4>
+              <h4 class="left-align">英语国家</h4>
               <ul>
-                <li><a href="http://www.kitploit.com/2016/03/pentestbox-20-portable-penetration.html" target="_blank"><i class="material-icons">label_outline</i> PentestBox 2.0 -便携式渗透测试分布Windows环境</a></li>
-                <li><a href="http://www.ehacking.net/2015/06/pentestbox-penetration-testing.html" target="_blank"><i class="material-icons">label_outline</i> PentestBox：渗透测试分布为Windows</a></li>
-                <li><a href="https://www.digitalmunition.me/2016/03/pentestbox-2-0-portable-penetration-testing-distribution-windows-environments/" target="_blank"><i class="material-icons">label_outline</i> PentestBox 2.0 -便携式渗透测试分布Windows环境</a></li>
-                <li><a href="http://www.csoonline.com/article/3066907/security/salted-hash-rehashed-the-weekly-news-recap-for-may-7-2016.html" target="_blank"><i class="material-icons">label_outline</i>整洁的工具：Pentest箱</a></li>
-                <li><a href="http://buffercode.in/pentestbox-a-portable-penetration-testing-distribution-for-windows-environments/" target="_blank"><i class="material-icons">label_outline</i> PentestBox：一个便携式渗透测试分布Windows环境</a></li>
-            </ul></div>
+                <li><a href="http://www.kitploit.com/2016/03/pentestbox-20-portable-penetration.html" target="_blank"><i class="material-icons">label_outline</i> PentestBox 2.0 - Portable Penetration Testing Distribution for Windows Environments</a></li>
+                <li><a href="http://www.ehacking.net/2015/06/pentestbox-penetration-testing.html" target="_blank"><i class="material-icons">label_outline</i> PentestBox: Penetration Testing Distribution for Windows</a></li>
+                <li><a href="https://www.digitalmunition.me/2016/03/pentestbox-2-0-portable-penetration-testing-distribution-windows-environments/" target="_blank"><i class="material-icons">label_outline</i> PentestBox 2.0 – Portable Penetration Testing Distribution for Windows Environments</a></li>
+                <li><a href="http://www.csoonline.com/article/3066907/security/salted-hash-rehashed-the-weekly-news-recap-for-may-7-2016.html" target="_blank"><i class="material-icons">label_outline</i> Neat tool: Pentest Box</a></li>
+                <li><a href="http://buffercode.in/pentestbox-a-portable-penetration-testing-distribution-for-windows-environments/" target="_blank"><i class="material-icons">label_outline</i> PentestBox: A Portable Penetration Testing Distribution for Windows Environments</a></li>
+            </div>
           </div>
         </div>
 </div>
@@ -501,41 +485,43 @@
   <div class="divider"></div>
   <div class="header">
         <h3 class="header center orange-text">贡献</h3>
-        <!--<h5 class="header center blue-grey-text">Here is what few of them have to say.</h5>-->      
+        <h5 class="header center blue-grey-text">如果您对本项目感兴趣，请做出一点贡献让它变得更好。</h5>
+   
         <div class="row">
-		      <div class="col s7">
-		        <p>有您能促进这个项目的方法很多，其中一些列举如下： -</p>
+		      <div  class="col s7">
+		        <p>
+					 我们欢迎各种方式的贡献，下面只是列举了一些 :- </p>
            <ul>
-         <li><i class="material-icons">keyboard_arrow_right</i>帮我完成我的<a href="https://todo.pentestbox.org/">待办事项</a>列表。</li>
-<li><i class="material-icons">keyboard_arrow_right</i>改善文档或网站的语法（我不是以英语为母语）</li>
-<li><i class="material-icons">keyboard_arrow_right</i>翻译在您的母语的网站或文件。</li>
-<li><i class="material-icons">keyboard_arrow_right</i>提交错误报告</li>
-<li><i class="material-icons">keyboard_arrow_right</i>建议特性和功能。</li>
-<li><i class="material-icons">keyboard_arrow_right</i>改善PentestBox网站UI。</li>
-<li><i class="material-icons">keyboard_arrow_right</i>在发布会上，本地聚会或在圈中传播出去。</li>
-<p>了解更多关于在促进<a href="https://docs.pentestbox.org/contributing.html" target="_blank">docs.pentestbox.org/contributing.html</a></p>
-<p>我非常欣赏的时间和我们的贡献者已经竖起，使PentestBox更真棒努力，您可以查看列表<a href="https://docs.pentestbox.org/contributing.html#our-awesome-contributors">我们的真棒贡献者</a> 。</p>
+         <li><i class="material-icons">keyboard_arrow_right</i>帮我完善我的<a href="https://todo.pentestbox.org/" href="_blank">计划列表</a>。</li>
+<li><i class="material-icons">keyboard_arrow_right</i>优化文档和网站的语法（英语不是我的母语）。</li>
+<li><i class="material-icons">keyboard_arrow_right</i>将网站和相关文档翻译成为您的母语。</li>
+<li><i class="material-icons">keyboard_arrow_right</i>提交漏洞报告。</li>
+<li><i class="material-icons">keyboard_arrow_right</i>对功能和特性提出建议。</li>
+<li><i class="material-icons">keyboard_arrow_right</i>优化 PentestBox 的界面。</li>
+<li><i class="material-icons">keyboard_arrow_right</i>在正式会议、线下聚会或者您的文章中宣传我们。</li>
+<p>想知道更多的贡献方式请参考<a href="https://docs.pentestbox.org/contributing.html" target="_blank">docs.pentestbox.org/contributing.html</a>。</p>
+<p>我非常的感谢那些付出了时间和精力，让 PentestBox 变得更加卓越的贡献者们，请阅读这份<a href="https://docs.pentestbox.org/contributing.html#our-awesome-contributors">卓越的贡献者们</a>列表。</p>
 <ul>
-</ul></ul></div>
+</div>
 
 
-			  <div class="col s5">
-        <p>这种规模的项目需要大量的时间和金钱。因为我在这个项目上单独工作，真的很难人来管理。请捐赠或赞助他的项目，如果你觉得值得这样做。</p>
+			  <div  class="col s5">
+        <p>如此庞大的工程需要投入大量的时间和金钱，我一直是一个人在进行这个项目。我发现想要平衡这些因素非常困难，如果您觉得我的工作有价值，请捐助或者赞助我们。</p>
 
-			  <h5>与PayPal捐赠</h5>
+			  <h5>使用 Paypal 捐助</h5>
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="QT59QZQXWTK86">
-<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="贝宝 - 更安全，更方便的网上支付方式。">
+<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online.">
 <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+<p>如果上面的任何按钮给您带来了问题，请发邮件至 aditya@manifestsecurity.com</p>
+			  <h5>使用比特币捐助</h5>
+<p>比特币钱包地址: 183W2Nbmx6LX8KYEAXxJ5mSze23ZD5tAWh</p>
+<h5>赞助 PentestBox</h5>
+<p>如果您对赞助 PentestBox 感兴趣，请阅读 <a href="https://docs.pentestbox.org/sponsoring.html" target="_blank">docs.pentestbox.org/sponsoring</a>.
 
-			  <h5>与比特币捐赠</h5>
-<p>比特币钱包地址：183W2Nbmx6LX8KYEAXxJ5mSze23ZD5tAWh</p>
-<h5>赞助PentestBox</h5>
-<p>如果您有兴趣赞助PentestBox，请看看<a href="https://docs.pentestbox.org/sponsoring.html" target="_blank">docs.pentestbox.org/sponsoring</a> 。
 
-
-			   </p></form></div>
+			   </div>
 
 </div>
 </div>
@@ -548,7 +534,7 @@
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">PentestBox</h5>
-          <p class="grey-text text-lighten-4">PentestBox是一个开源的预配置便携式渗透测试环境的Windows操作系统。它是基于<a href="https://conemu.github.io/" class="orange-text text-lighten-3">ConEmu</a>和<a href="https://github.com/cmderdev/cmder" class="orange-text text-lighten-3" target="_blank">cmder</a> 。学分去他们的开发人员提供这样一个真棒平台建立PentestBox。</p>
+          <p class="grey-text text-lighten-4">PentestBox是一款Windows平台下预配置的便携式开源渗透测试环境。它是基于<a href="https://conemu.github.io/" class="orange-text text-lighten-3">ConEmu</a> 和 <a href="https://github.com/cmderdev/cmder" class="orange-text text-lighten-3" target="_blank">cmder</a>的，感谢它们的开发者提供如此卓越的平台创造了 PentestBox。</p>
 
 
         </div>
@@ -558,25 +544,28 @@
             <li><a class="white-text" href="https://docs.pentestbox.org">文档</a></li>
             <li><a class="white-text" href="https://docs.pentestbox.org/faq.html">常见问题</a></li>
             <li><a class="white-text" href="https://pentestbox.org/blog/">博客</a></li>
-            <li><a class="white-text" href="https://tools.pentestbox.org">工具清单</a></li>
+            <li><a class="white-text" href="https://tools.pentestbox.org">计划列表</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">连接</h5>
+          <h5 class="white-text">联系方式</h5>
           <ul>
-            <li><a class="white-text" href="https://facebook.com/PentestBox">Fackbook</a></li>
-            <li><a class="white-text" href="https://twitter.com/PentestBox">推特</a></li>
-            <li><a class="white-text" href="https://telegram.me/pentestbox">电报1</a></li>
+            <li><a class="white-text" href="https://facebook.com/PentestBox">Facebook</a></li>
+            <li><a class="white-text" href="https://twitter.com/PentestBox">Twitter</a></li>
+            <li><a class="white-text" href="https://telegram.me/pentestbox">Telegram</a></li>
           </ul>
         </div>
         <div class="col l3 s12 white-text">
           <ul>
-            <li><a class="white-text" href="mailto:aditya@manifestsecurity.com">联系方式：aditya@manifestsecurity.com</a></li>
-          </ul>制造在印度<span style="color:#e74c3c">♥</span></div>
+            <li><a class="white-text" href="mailto:aditya@manifestsecurity.com">邮件: aditya@manifestsecurity.com</a></li>
+          </ul>
+         印度 <span style="color: #e74c3c">&hearts;</span> 制造
+        </div>
       </div>
     </div>
     <div class="footer-copyright">
-      <div class="container">版权<a class="orange-text text-lighten-3" href="http://manifestsecurity.com">ManifestSecurity</a> 。版权所有.| <a href="License.txt" class="orange-text text-lighten-3" target="_blank">许可证</a> | <a href="https://tools.pentestbox.org/#disclaimer" class="orange-text text-lighten-3" target="_blank">免责声明</a> 
+      <div class="container">
+      Copyright 2016. <a class="orange-text text-lighten-3" href="http://manifestsecurity.com">ManifestSecurity</a>. All Rights Reserved.| <a href="License.txt" target="_blank" class="orange-text text-lighten-3">License</a> | <a href="https://tools.pentestbox.org/#disclaimer" class="orange-text text-lighten-3" target="_blank">Disclaimer</a> 
       </div>
     </div>
   </footer>
@@ -640,16 +629,7 @@
       });
 
   	});
-      </script>
-       <script>
-   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-   ga('create', 'UA-63456929-1', 'auto');
-   ga('send', 'pageview');
- </script>
- <script>
+
 /**
 * Function that tracks a click on an outbound link in Google Analytics.
 * This function takes a valid URL string as an argument, and uses that URL string
@@ -664,5 +644,5 @@ var trackOutboundLink = function(url) {
 }
 </script>
 
-  
+  </body>
 </html>

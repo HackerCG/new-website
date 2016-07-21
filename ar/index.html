@@ -85,6 +85,20 @@
   }
   }
    </style>
+  <script>
+    var userLang = navigator.language || navigator.userLanguage;
+    if ((userLang="zh-CN") || ("zh-TW")){
+        window.location.assign("https://pentestbox.org/zh/")
+    }else if (userLang="vi"){
+        window.location.assign("https://pentestbox.org/vi/")
+    }else if (userLang="pt"){
+        window.location.assign("https://pentestbox.org/pt/")
+    }else if (userLang="ar"){
+        window.location.assign("https://pentestbox.org/ar/")    
+    }else if (userLang="it"){
+        window.location.assign("https://pentestbox.org/it/")    
+    }
+  </script>
 </head>
 <body>
 
@@ -96,7 +110,7 @@
   <li><a href="https://telegram.me/pentestbox">تلغرام</a></li>
   </ul>
   <nav class="light-blue blue darken-3 navbar-fixed" role="navigation">
-    <div class=""> <a id="logo-container" href="https://pentestbox.org" class="brand-logo">PentestBox</a>
+    <div class="">
       <ul class="right hide-on-med-and-down">
         <li><a href="https://pentestbox.org/blog/">مدونة</a></li>
         <li><a href="https://tools.pentestbox.org">أدوات</a></li>
